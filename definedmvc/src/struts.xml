@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+	<action name = "user" class = "action.UserAction">
+		<result name = "success">/index.jsp</result>
+	</action>
+</struts>
