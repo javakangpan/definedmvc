@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+    <struts>
+    
+    	<package name="user" extends="struts-default" namespace="/user" strict-method-invocation="false">
+    		<action name="user_*" class="pers.kp.action.UserAciton" method="{1}">
+    			<result name="success">/front/user.jsp</result>
+    			<result name="query" type="redirectAction">user_query</result>
+    			<result name="add">/front/userAdd.jsp</result>
+    		</action>
+    	</package>
+    	
+    </struts>
